@@ -343,8 +343,8 @@
                 solutions.
             </p>
         </div>
-        <div class="socials">
-            <p class="socials-label">Social media</p>
+        <div class="footer-section">
+            <p class="footer-label">Social media</p>
             <ul class="social-links">
                 <li>
                     <a href="#">
@@ -376,10 +376,32 @@
                 </li>
             </ul>
         </div>
+        <div class="subscribe footer-section">
+            <p class="footer-label">Subscribe</p>
+            <form class="subscribe-form">
+                <label for="subscribe-email" class="sr-only">
+                    Subscribe
+                </label>
+                <input
+                        type="email"
+                        name="email"
+                        class="subscribe-email"
+                        id="subscribe-email"
+                        placeholder="E-mail"
+                        required
+                >
+                <button type="submit" class="button-primary">
+                    Subscribe
+                    <svg class="icon" width="24" height="24">
+                        <use href="./images/icons.svg#send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
 </footer>
-<div class="modal-overlay">
-    <div class="modal">
+<div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
         <button class="modal-close">
             <svg class="icon" width="8" height="8">
                 <use href="./images/icons.svg#close"></use>

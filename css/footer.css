@@ -20,26 +20,71 @@
     margin-right: 120px;
 }
 
-.socials {
+.footer-section {
     display: flex;
     gap: 16px;
     flex-direction: column;
 }
 
-.socials .social-links {
+.footer-section .social-links {
     gap: 16px;
 }
 
-.socials .social-links li a {
+.footer-section .social-links li a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials .social-links li a:hover,
-.socials .social-links li a:focus {
+.footer-section .social-links li a:hover,
+.footer-section .social-links li a:focus {
     background-color: #31D0AA;
 }
 
-.socials-label {
+.footer-label {
     font-weight: 500;
     color: #FFF;
+}
+
+.subscribe {
+    margin-left: 83px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-email {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    background-color: inherit;
+    color: #FFF;
+    outline: none;
+}
+
+.subscribe-email::placeholder {
+    color: #FFF;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-email:active,
+.subscribe-email:focus {
+    border-color: #31D0AA;
+}
+
+.subscribe-form .button-primary {
+    padding: 8px 24px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.subscribe-form .button-primary .icon {
+    fill: #FFF;
+}
+
+.subscribe-form .button-primary:hover {
+    background-color: #31D0AA;
 }
